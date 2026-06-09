@@ -3,61 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZA HANDO</title>
+<title>ZA HANDO - Wolvesville Türk Klanı</title>
+<!-- JoJo anime ruhunu yansıtacak özel yazı tipleri -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#1f2329;
-    color:white;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* Mor tonlarında ve şık bir neon arka plan gradienti + Za Hando Stand Resmi */
+    /* Resim linkini değiştirmek istersen aşağıdaki url('...') içindeki adresi değiştirebilirsin */
+    background: linear-gradient(rgba(26, 9, 46, 0.88), rgba(15, 3, 28, 0.94)), 
+                url('https://images3.alphacoders.com/109/1094895.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f3e8ff; /* Çok açık morumsu beyaz yazı rengi */
+    min-height: 100vh;
 }
 
-header{
-    background:#2a2f36;
-    padding:30px;
-    text-align:center;
-    border-bottom:3px solid #3b82f6;
+header {
+    background: rgba(30, 9, 54, 0.85);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #eab308; /* JoJo altın sarısı çizgisi */
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-header h1{
-    margin:0;
-    font-size:40px;
-    color:#3b82f6;
+header h1 {
+    margin: 0;
+    font-family: 'Bangers', cursive; /* Manga tarzı başlık fontu */
+    font-size: 70px;
+    letter-spacing: 4px;
+    color: #eab308; /* Altın Sarısı */
+    text-shadow: 4px 4px 0px #6b21a8, 7px 7px 0px #000; /* Mor ve siyah anime tarzı 3D gölge efekti */
 }
 
-header p{
-    color:#d1d5db;
+header p {
+    color: #c084fc; /* Canlı lila rengi */
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    letter-spacing: 1px;
 }
 
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
 }
 
-.card{
-    background:#2a2f36;
-    padding:20px;
-    border-radius:12px;
-    margin-bottom:20px;
+.card {
+    /* Mor şeffaf cam efekti (Glassmorphism) */
+    background: rgba(28, 11, 48, 0.8);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(168, 85, 247, 0.35); /* Mor neon ince kenarlık */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 }
 
-h2{
-    color:#3b82f6;
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: #eab308;
+    margin-top: 0;
+    text-shadow: 2px 2px 0px #4c1d95;
+    border-bottom: 2px dashed rgba(234, 179, 8, 0.4);
+    padding-bottom: 10px;
 }
 
-.rule{
-    background:#353b44;
-    padding:12px;
-    margin:10px 0;
-    border-radius:8px;
+p {
+    line-height: 1.7;
+    font-size: 16px;
+    color: #e9d5ff;
 }
 
-footer{
-    text-align:center;
-    padding:20px;
-    color:#9ca3af;
+.rule {
+    background: rgba(88, 28, 135, 0.45); /* Koyu mor saydam kural paneli */
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border-left: 5px solid #eab308; /* Sol tarafta parlayan altın sarısı çizgisi */
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.rule:hover {
+    transform: scale(1.02); /* Üzerine gelince parlar */
+    background: rgba(88, 28, 135, 0.65);
+}
+
+.features-list {
+    font-size: 18px;
+    line-height: 2;
+    color: #f3e8ff;
+    font-weight: 500;
+}
+
+.features-list span {
+    color: #eab308; /* Öne çıkan kelimeler altın rengi */
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #c084fc;
+    background: rgba(15, 3, 28, 0.95);
+    margin-top: 40px;
+    border-top: 4px solid #eab308;
+    font-weight: 600;
+    font-size: 14px;
 }
 </style>
 
@@ -66,69 +128,82 @@ footer{
 
 <header>
     <h1>ZA HANDO</h1>
-    <p>Türk Wolvesville Klanı</p>
+    <!-- İstediğin değişiklik buraya başarıyla uygulandı -->
+    <p>⚡ ZA HANDO EN İYİDİR ⚡</p>
 </header>
 
 <div class="container">
 
 <div class="card">
-<h2>Klan Hakkında</h2>
+<h2>🔮 Klan Hakkında</h2>
 
 <p>
-ZA HANDO, Wolvesville'de eğlenmek, yeni arkadaşlar edinmek ve birlikte güzel vakit geçirmek amacıyla kurulmuş Türk klanıdır.
+<strong>ZA HANDO</strong>, Wolvesville evreninde eğlenmek, yeni dostluklar kurmak ve birlikte güçlü bir topluluk oluşturmak amacıyla kurulmuş, anime ruhuyla harmanlanmış bir Türk klanıdır.
 </p>
 
 <p>
-Yeni başlayan oyunculara yardımcı olmayı, oyun bilgilerini paylaşmayı ve herkes için samimi bir ortam oluşturmayı hedefliyoruz.
+Adımızı efsanevi stand "The Hand" (Za Hando) ve onun her şeyi uzay-zaman boşluğunda silip yok etme gücünden alıyoruz. Biz de klanımızda negatifliği, toksikliği ve yalnızlığı silip atıyoruz!
 </p>
 
 <p>
-Burada önemli olan sadece kazanmak değil; sohbet etmek, eğlenmek ve birlikte gelişmektir. İster yeni oyuncu ol ister deneyimli, aramıza katılabilirsin.
+İster oyuna dün başlamış bir çaylak ol, ister yüzlerce galibiyeti olan deneyimli bir kurt; kapımız klan ruhunu paylaşmak isteyen herkese sonuna kadar açıktır.
 </p>
 
 </div>
 
 <div class="card">
-<h2>Genel Kurallar</h2>
+<h2>📜 Genel Kurallar</h2>
 
-<div class="rule">✅ Herkese saygılı davran.</div>
+<div class="rule">✅ Herkese saygılı ve adil davranın.</div>
 
-<div class="rule">❌ Küfür, hakaret ve aşağılayıcı sözler yasaktır.</div>
+<div class="rule">❌ Küfür, hakaret ve aşağılayıcı her türlü söylem kesinlikle yasaktır.</div>
 
-<div class="rule">❌ Irkçılık ve ayrımcılık yasaktır.</div>
+<div class="rule">❌ Irkçılık, cinsiyetçilik ve her türlü ayrımcılık klandan süresiz uzaklaştırılma sebebidir.</div>
 
-<div class="rule">❌ Gereksiz tartışma ve kavga çıkarmayın.</div>
+<div class="rule">❌ Klan içi huzuru bozacak gereksiz tartışmalardan kaçının.</div>
 
-<div class="rule">✅ Yeni oyunculara yardımcı olun.</div>
+<div class="rule">✅ Yeni ve tecrübesiz üyelere oyun içinde destek olup yol gösterin.</div>
 
-<div class="rule">❌ Hile kullanımı yasaktır.</div>
-
-<div class="rule">✅ Eğlenmeyi unutmayın.</div>
+<div class="rule">✅ Sadece kazanmaya değil, birlikte eğlenmeye odaklanın!</div>
 
 </div>
 
 <div class="card">
-<h2>Neden ZA HANDO?</h2>
+<h2>🔥 Neden ZA HANDO?</h2>
 
-<p>
-✔ Dost canlısı üyeler
-<br>
-✔ Yardımsever ortam
-<br>
-✔ Türk oyuncu topluluğu
-<br>
-✔ Yeni başlayanlara destek
-<br>
-✔ Eğlence odaklı klan
-</p>
+<div class="features-list">
+    ✔ <span>Sadakat Dolu Üyeler:</span> Birbirini yarı yolda bırakmayan güçlü dostluklar.<br>
+    ✔ <span>Samimi Sohbetler:</span> Oyundan çok daha fazlası, sıcacık bir aile ortamı.<br>
+    ✔ <span>Gelişim Odaklı:</span> Taktikler, roller ve stratejiler hakkında yardımlaşma.<br>
+    ✔ <span>Eğlence ve Anime Ruhu:</span> Sıradanlıktan uzak, rengarenk ve heyecan dolu bir klan yapısı.
+</div>
 
 </div>
 
 </div>
 
 <footer>
-ZA HANDO © 2026
+ZA HANDO © 2026 • Okuyasu Nijimura'nın İzniyle!
 </footer>
 
 </body>
 </html>
+```
+eof
+
+---
+
+### 🖼️ Arkaya Za Hando Standı Resmini Nasıl Ekleyeceksin?
+
+Sitenin arkasındaki resmi değiştirmek aslında çocuk oyuncağı. Sana adım adım bunu nasıl yapacağını anlatıyorum:
+
+1. **İstediğin Resmi Bul:** Google Görseller'e gir ve arama kısmına `"Za Hando stand wallpaper"` veya `"Okuyasu Nijimura wallpaper hd"` yaz. Beğendiğin, arkaya yakışacak dikey ya da yatay geniş bir resmi bul.
+2. **Resim Adresini Kopyala:** Beğendiğin resmin üstüne sağ tıkla ve **"Resim adresini kopyala"** (Copy image address) seçeneğine bas. (Kopyaladığın linkin sonu `.jpg` veya `.png` gibi bitmelidir).
+3. **Koddaki Yeri Bul:** Yukarıdaki kodun **20. satırında** yer alan şu kısmı gör:
+   ```css
+   background: linear-gradient(rgba(26, 9, 46, 0.88), rgba(15, 3, 28, 0.94)), 
+               url('https://images3.alphacoders.com/109/1094895.jpg') no-repeat center center fixed;
+   ```
+4. **Linkleri Değiştir:** Tek yapman gereken `url('https://images3.alphacoders.com/109/1094895.jpg')` içindeki o tırnak arası adresi silip, kendi kopyaladığın yeni resim linkini oraya yapıştırmak!
+
+Bunu yapıp kaydettiğinde, seçtiğin o canavar gibi Za Hando stand resmi sitenin arkasında mor ışıklarla parlamaya başlayacaktır. Deneyip bana haber ver!
